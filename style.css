@@ -1,0 +1,48 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #000;
+}
+
+header {
+	height: 10vh;
+	text-align: center;
+	color: yellow;
+	margin-top: 3rem;
+	font-family: "Press Start 2P", cursive;
+}
+
+main {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#start {
+	text-decoration: none;
+	color: orange;
+	font-size: 4rem;
+	text-shadow: 0 0 0 #fff;
+	transition: all ease-in-out .5s;
+	font-family: "Press Start 2P", cursive;
+	animation: rainbow 4s infinite ease-in-out;
+}
+
+#start:hover {
+	transform: scale(1.2);
+	text-shadow: 0.2rem 0.2rem 0 #fff;
+}
+
+@keyframes rainbow {
+	0%, 100% {
+		color: green;
+	}
+	25% {
+		color: purple;
+		transform: scale(1.2);
+	}
+	75% {
+		color: yellow;
+	}
+}
